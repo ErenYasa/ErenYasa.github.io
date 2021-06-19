@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>SoftNet</title>
+</head>
+
+<body class="grid">
+
+    <!-- #region SVG -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-user-circle" viewBox="0 0 28 28">
+                <path
+                    d="M23.797 20.922c-0.406-2.922-1.594-5.516-4.25-5.875-1.375 1.5-3.359 2.453-5.547 2.453s-4.172-0.953-5.547-2.453c-2.656 0.359-3.844 2.953-4.25 5.875 2.172 3.063 5.75 5.078 9.797 5.078s7.625-2.016 9.797-5.078zM20 10c0-3.313-2.688-6-6-6s-6 2.688-6 6 2.688 6 6 6 6-2.688 6-6zM28 14c0 7.703-6.25 14-14 14-7.734 0-14-6.281-14-14 0-7.734 6.266-14 14-14s14 6.266 14 14z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-modem" viewBox="0 0 48 48">
+                <path
+                    d="M0 44c0 2.21 1.79 4 4 4h40c2.21 0 4-1.79 4-4l-0-11c0-2.21-1.79-4-4-4h-12v-10.5c0-1.38-1.12-2.5-2.5-2.5s-2.5 1.12-2.5 2.5v10.5h-23c-2.21 0-4 1.79-4 4v11zM5 38.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5zM14 38.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5zM29.5 8c-5.8 0-10.5 4.7-10.5 10.5 0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5c0-3.040 2.46-5.5 5.5-5.5s5.5 2.46 5.5 5.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5c-0-5.8-4.7-10.5-10.5-10.5zM29.5 0c-10.22 0-18.5 8.28-18.5 18.5 0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5c0-7.46 6.040-13.5 13.5-13.5s13.5 6.040 13.5 13.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5c-0-10.22-8.279-18.5-18.5-18.5z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-menu" viewBox="0 0 24 24">
+                <path d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- SEARCH-ICON -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-search" viewBox="0 0 32 32">
+                <path
+                    d="M31.715 28.953c0.381 0.381 0.381 0.999 0 1.381l-1.381 1.381c-0.382 0.381-1 0.381-1.381 0l-9.668-9.668c-0.105-0.105-0.175-0.229-0.222-0.361-1.983 1.449-4.418 2.314-7.063 2.314-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12 0 2.645-0.865 5.080-2.314 7.063 0.132 0.047 0.256 0.116 0.361 0.222l9.668 9.668zM12 4c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8c0-4.418-3.582-8-8-8z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+    <!-- #endregion -->
+
+    <!-- #region HEADER -->
+    <header class="header">
+
+        <div class="header-container">
+
+            <!-- #region HEADER LEFT -->
+            <div class="header-left">
+                <a href="#" class="header-left-link">Bireysel</a>
+                <a href="#" class="header-left-link">Kurumsal</a>
+                <a href="#" class="header-left-link">Bulut Çözüm</a>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region ACCOUNT -->
+            <div class="header-right">
+                <a href="tel: 444 44 44" class="telephone-nmbr">444 44 44</a>
+                <p class="brace">|</p>
+                <a href="#" class="account-desktop">Giriş</a>
+            </div>
+
+            <button class="account-button">
+                <svg class="icon icon-user-circle">
+                    <use xlink:href="#icon-user-circle"></use>
+                </svg>
+            </button>
+            <!-- #endregion -->
+
+            <!-- #region LOGO -->
+            <div class="header-logo">
+                <a href="#top" class="logo-link">
+                    <svg class="icon icon-modem">
+                        <use xlink:href="#icon-modem"></use>
+                    </svg>
+                    SOFTNET
+                </a>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region NAV-BTN -->
+            <button class="navigation-button">
+                <label for="navigation-btn">
+                    <svg class="icon icon-menu">
+                        <use xlink:href="#icon-menu"></use>
+                    </svg>
+                </label>
+            </button>
+            <!-- #endregion -->
+
+        </div>
+
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region NAVBAR -->
+    <div class="navigation">
+        <div class="navigation-container">
+            <input type="checkbox" id="navigation-btn" class="nav-check">
+
+            <menu class="navigation-menu">
+
+                <ul class="menu-btn-list">
+                    <li class="menu-btn">Bireysel</li>
+                    <li class="menu-btn">Kurumsal</li>
+                    <li class="menu-btn">Bulut Çözüm</li>
+                </ul>
+
+                <nav class="menu-link-list">
+                    <a href="#" class="menu-link">İnternet</a>
+                    <a href="#" class="menu-link">Tv</a>
+                    <a href="#" class="menu-link">Kampanyalar</a>
+                    <a href="#" class="menu-link">Hız Testi</a>
+                    <a href="#" class="menu-link">Altyapı Sorgulama</a>
+                    <a href="#" class="menu-link">Yardım</a>
+
+                    <hr class="horizontal">
+
+                    <!-- SEARCH-AREA -->
+
+                    <input type="checkbox" id="search-area">
+                    <div class="search">
+                        <div class="search-grid">
+                            <input class="search-box" type="search" placeholder="Ara">
+                            <button class="search-btn">Ara</button>
+                        </div>
+                    </div>
+                </nav>
+
+            </menu>
+
+            <div class="search-desktop">
+                <button class="search-btn-desktop">
+                    <label for="search-area" class="search-label">
+                        <svg class="icon icon-search">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </label>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- #endregion -->
+
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="intro-container">
+        </div>
+    </section>
+    <!-- CALL -->
+    <div class="call">
+        <div class="call-container">
+            <div class="call-area">
+                <h2 class="call-title">
+                    Bilgilerinizi Girin, Biz Sizi Arayalım!
+                </h2>
+                <label for="name">İsim Soyisim</label>
+                <input type="text" id="name" class="call-input">
+                <label for="tel-no">Cep Telefonu</label>
+                <input type="tel" id="tel-no" class="call-input">
+                <button class="btn btn-call">Gönder</button>
+            </div>
+        </div>
+    </div>
+    <!-- SQUARE-1 -->
+    <section class="square-1">
+    </section>
+    <!-- TARRIFS -->
+    <section class="tarrifs">
+    </section>
+    <!-- SQUARE-2 -->
+    <section class="square-2">
+    </section>
+    <!-- ASSISTANCE -->
+    <section class="assistance">
+    </section>
+    <!-- SOCIAL ICON -->
+    <section class="social-icons">
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+    </footer>
+    <!-- FOOTER-2 -->
+    <div class="underside">
+    </div>
+
+</body>
+
+</html>
