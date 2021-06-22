@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SoftNet</title>
+</head>
+
+<body class="grid">
+
+    <!-- #region SVG -->
+
+    <!-- MOBIL-HEADER-ACCOUNT -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-user-circle" viewBox="0 0 28 28">
+                <path
+                    d="M23.797 20.922c-0.406-2.922-1.594-5.516-4.25-5.875-1.375 1.5-3.359 2.453-5.547 2.453s-4.172-0.953-5.547-2.453c-2.656 0.359-3.844 2.953-4.25 5.875 2.172 3.063 5.75 5.078 9.797 5.078s7.625-2.016 9.797-5.078zM20 10c0-3.313-2.688-6-6-6s-6 2.688-6 6 2.688 6 6 6 6-2.688 6-6zM28 14c0 7.703-6.25 14-14 14-7.734 0-14-6.281-14-14 0-7.734 6.266-14 14-14s14 6.266 14 14z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- HEADER-LOGO -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-modem" viewBox="0 0 48 48">
+                <path
+                    d="M0 44c0 2.21 1.79 4 4 4h40c2.21 0 4-1.79 4-4l-0-11c0-2.21-1.79-4-4-4h-12v-10.5c0-1.38-1.12-2.5-2.5-2.5s-2.5 1.12-2.5 2.5v10.5h-23c-2.21 0-4 1.79-4 4v11zM5 38.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5zM14 38.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5zM29.5 8c-5.8 0-10.5 4.7-10.5 10.5 0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5c0-3.040 2.46-5.5 5.5-5.5s5.5 2.46 5.5 5.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5c-0-5.8-4.7-10.5-10.5-10.5zM29.5 0c-10.22 0-18.5 8.28-18.5 18.5 0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5c0-7.46 6.040-13.5 13.5-13.5s13.5 6.040 13.5 13.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5c-0-10.22-8.279-18.5-18.5-18.5z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- MOBIL-HEADER-MENU -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-menu" viewBox="0 0 24 24">
+                <path d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- -NAVBAR-SEARCH-ICON -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-search" viewBox="0 0 32 32">
+                <path
+                    d="M31.715 28.953c0.381 0.381 0.381 0.999 0 1.381l-1.381 1.381c-0.382 0.381-1 0.381-1.381 0l-9.668-9.668c-0.105-0.105-0.175-0.229-0.222-0.361-1.983 1.449-4.418 2.314-7.063 2.314-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12 0 2.645-0.865 5.080-2.314 7.063 0.132 0.047 0.256 0.116 0.361 0.222l9.668 9.668zM12 4c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8c0-4.418-3.582-8-8-8z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- INFO-1 FIBER NET -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-speedometer" viewBox="0 0 32 32">
+                <path
+                    d="M16-0.034c-8.841 0-16.035 7.192-16.035 16.034s7.194 16.034 16.035 16.034 16.035-7.192 16.035-16.034-7.194-16.034-16.035-16.034zM16 30.966c-8.252 0-14.965-6.714-14.965-14.966s6.713-14.966 14.965-14.966 14.965 6.714 14.965 14.966-6.713 14.966-14.965 14.966zM16.5 6.053c0.305 0 0.553-0.247 0.553-0.553v-2c0-0.306-0.248-0.553-0.553-0.553s-0.553 0.247-0.553 0.553v2c0 0.306 0.248 0.553 0.553 0.553zM5.5 14.947h-2c-0.305 0-0.553 0.247-0.553 0.553s0.248 0.553 0.553 0.553h2c0.305 0 0.553-0.247 0.553-0.553s-0.248-0.553-0.553-0.553zM25.947 15.5c0 0.306 0.248 0.553 0.553 0.553h2c0.305 0 0.553-0.247 0.553-0.553s-0.248-0.553-0.553-0.553h-2c-0.305 0-0.553 0.247-0.553 0.553zM8.575 10.128c0.142 0 0.283-0.054 0.391-0.162 0.216-0.216 0.216-0.565 0-0.781l-1.575-1.576c-0.216-0.217-0.565-0.217-0.781 0s-0.216 0.565 0 0.781l1.575 1.575c0.107 0.109 0.249 0.163 0.39 0.163zM23.891 21.109c-0.216-0.217-0.565-0.217-0.781 0s-0.216 0.565 0 0.781l1.5 1.5c0.108 0.108 0.249 0.162 0.391 0.162s0.283-0.054 0.391-0.162c0.216-0.216 0.216-0.565 0-0.781l-1.501-1.5zM24.891 7.891c0.216-0.216 0.216-0.565 0-0.781s-0.565-0.217-0.781 0l-1.575 1.575c-0.216 0.216-0.216 0.565 0 0.781 0.108 0.108 0.249 0.162 0.391 0.162s0.283-0.054 0.391-0.162l1.574-1.575zM8.609 21.609l-1.5 1.5c-0.216 0.216-0.216 0.565 0 0.781 0.108 0.108 0.249 0.162 0.391 0.162s0.283-0.054 0.391-0.162l1.5-1.5c0.216-0.216 0.216-0.565 0-0.781s-0.566-0.216-0.782 0zM19.5 24h-7c-0.889-0.034-1.535 0.611-1.535 1.5v0.957c0 0.898 0.674 1.603 1.535 1.543h7c0.86 0.060 1.535-0.645 1.535-1.543v-0.957c0-0.889-0.646-1.534-1.535-1.5zM19.965 26.457c0 0.257-0.146 0.534-0.465 0.568h-7c-0.32-0.034-0.465-0.312-0.465-0.025v-0.957c0-0.839 0.169-1.009 0.465-1.043h7c0.296 0.034 0.465 0.204 0.465 0.5v0.957zM16 18.667c0.712 0 1.382-0.277 1.885-0.781 0.911-0.911 1.024-2.32 0.34-3.355l2.653-2.653c0.208-0.209 0.208-0.547 0-0.756-0.209-0.209-0.547-0.209-0.756 0l-2.656 2.656c-1.025-0.655-2.473-0.543-3.351 0.336-1.040 1.040-1.040 2.731 0 3.771 0.503 0.505 1.173 0.782 1.885 0.782zM15.058 15.058c0.251-0.252 0.586-0.391 0.942-0.391s0.691 0.139 0.943 0.391c0.52 0.52 0.52 1.365 0 1.885-0.503 0.504-1.381 0.504-1.885 0-0.52-0.52-0.52-1.366 0-1.885z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- INFO-1 CYCLE -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-cycle" viewBox="0 0 20 20">
+                <path
+                    d="M5.516 14.224c-2.262-2.432-2.222-6.244 0.128-8.611 0.962-0.969 2.164-1.547 3.414-1.736l-0.069-2.077c-1.755 0.213-3.452 0.996-4.797 2.351-3.149 3.17-3.187 8.289-0.123 11.531l-1.741 1.752 5.51 0.301-0.015-5.834-2.307 2.323zM12.163 2.265l0.015 5.834 2.307-2.322c2.262 2.434 2.222 6.246-0.128 8.611-0.961 0.969-2.164 1.547-3.414 1.736l0.069 2.076c1.755-0.213 3.452-0.996 4.798-2.35 3.148-3.172 3.186-8.291 0.122-11.531l1.741-1.754-5.51-0.3z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- INFO-1 HOUR-GLASS -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-hour-glass" viewBox="0 0 20 20">
+                <path
+                    d="M15.6 4.576c0-2.139 0-2.348 0-2.348 0-0.789-2.508-2.228-5.6-2.228-3.093 0-5.6 1.439-5.6 2.228 0 0 0 0.209 0 2.348 0 2.141 3.877 3.908 3.877 5.424 0 1.514-3.877 3.281-3.877 5.422s0 2.35 0 2.35c0 0.788 2.507 2.228 5.6 2.228 3.092 0 5.6-1.44 5.6-2.229 0 0 0-0.209 0-2.35s-3.877-3.908-3.877-5.422c0-1.515 3.877-3.282 3.877-5.423zM5.941 2.328c0.696-0.439 2-1.082 4.114-1.082s4.006 1.082 4.006 1.082c0.142 0.086 0.698 0.383 0.317 0.609-0.838 0.497-2.478 1.020-4.378 1.020s-3.484-0.576-4.324-1.074c-0.381-0.225 0.265-0.555 0.265-0.555zM10.501 10c0 1.193 0.996 1.961 2.051 2.986 0.771 0.748 1.826 1.773 1.826 2.435v1.328c-0.97-0.483-3.872-0.955-3.872-2.504 0-0.783-1.013-0.783-1.013 0 0 1.549-2.902 2.021-3.872 2.504v-1.328c0-0.662 1.056-1.688 1.826-2.435 1.055-1.025 2.051-1.793 2.051-2.986s-0.996-1.961-2.051-2.986c-0.771-0.75-1.826-1.775-1.826-2.438l-0.046-0.998c1.026 0.553 2.652 1.078 4.425 1.078 1.772 0 3.406-0.525 4.433-1.078l-0.055 0.998c0 0.662-1.056 1.688-1.826 2.438-1.054 1.025-2.051 1.793-2.051 2.986z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- INFO-1 TRY -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-try" viewBox="0 0 18 28">
+                <path
+                    d="M18 13c0 6.062-4.937 11-11 11h-2.5c-0.281 0-0.5-0.219-0.5-0.5v-9.547l-3.359 1.031c-0.047 0.016-0.094 0.016-0.141 0.016-0.109 0-0.203-0.031-0.297-0.094-0.125-0.094-0.203-0.25-0.203-0.406v-2c0-0.219 0.141-0.406 0.359-0.484l3.641-1.109v-1.453l-3.359 1.031c-0.047 0.016-0.094 0.016-0.141 0.016-0.109 0-0.203-0.031-0.297-0.094-0.125-0.094-0.203-0.25-0.203-0.406v-2c0-0.219 0.141-0.406 0.359-0.484l3.641-1.109v-3.906c0-0.281 0.219-0.5 0.5-0.5h2.5c0.281 0 0.5 0.219 0.5 0.5v2.828l5.859-1.813c0.141-0.047 0.313-0.016 0.438 0.078s0.203 0.25 0.203 0.406v2c0 0.219-0.141 0.406-0.359 0.484l-6.141 1.891v1.453l5.859-1.813c0.141-0.047 0.313-0.016 0.438 0.078s0.203 0.25 0.203 0.406v2c0 0.219-0.141 0.406-0.359 0.484l-6.141 1.891v7.609c3.906-0.266 7-3.516 7-7.484 0-0.281 0.219-0.5 0.5-0.5h2.5c0.281 0 0.5 0.219 0.5 0.5z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+    <!-- #endregion -->
+
+    <!-- #region HEADER -->
+    <header class="header">
+
+        <div class="header-container">
+
+            <!-- #region HEADER LEFT -->
+            <div class="header-left">
+                <a href="#" class="header-left-link">Bireysel</a>
+                <a href="#" class="header-left-link">Kurumsal</a>
+                <a href="#" class="header-left-link">Bulut Çözüm</a>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region ACCOUNT -->
+            <div class="header-right">
+                <a href="tel: 444 44 44" class="telephone-nmbr">444 44 44</a>
+                <p class="brace">|</p>
+                <a href="#" class="account-desktop">Giriş</a>
+            </div>
+
+            <button class="account-button">
+                <svg class="icon icon-user-circle">
+                    <use xlink:href="#icon-user-circle"></use>
+                </svg>
+            </button>
+            <!-- #endregion -->
+
+            <!-- #region LOGO -->
+            <div class="header-logo">
+                <a href="#top" class="logo-link">
+                    <svg class="icon icon-modem">
+                        <use xlink:href="#icon-modem"></use>
+                    </svg>
+                    SOFTNET
+                </a>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region NAV-BTN -->
+            <button class="navigation-button">
+                <label for="navigation-btn">
+                    <svg class="icon icon-menu">
+                        <use xlink:href="#icon-menu"></use>
+                    </svg>
+                </label>
+            </button>
+            <!-- #endregion -->
+
+        </div>
+
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region NAVBAR -->
+    <div class="navigation">
+        <div class="navigation-container">
+            <input type="checkbox" id="navigation-btn" class="nav-check">
+
+            <menu class="navigation-menu">
+
+                <ul class="menu-btn-list">
+                    <li class="menu-btn">Bireysel</li>
+                    <li class="menu-btn">Kurumsal</li>
+                    <li class="menu-btn">Bulut Çözüm</li>
+                </ul>
+
+                <nav class="menu-link-list">
+                    <a href="#" class="menu-link">İnternet</a>
+                    <a href="#" class="menu-link">Tv</a>
+                    <a href="#" class="menu-link">Kampanyalar</a>
+                    <a href="#" class="menu-link">Hız Testi</a>
+                    <a href="#" class="menu-link">Altyapı Sorgulama</a>
+                    <a href="#" class="menu-link">Yardım</a>
+
+                    <hr class="horizontal">
+
+                    <!-- SEARCH-AREA -->
+
+                    <input type="checkbox" id="search-area">
+                    <div class="search">
+                        <div class="search-grid">
+                            <input class="search-box" type="search" placeholder="Ara">
+                            <button class="search-btn">Ara</button>
+                        </div>
+                    </div>
+                </nav>
+
+            </menu>
+
+            <div class="search-desktop">
+                <button class="search-btn-desktop">
+                    <label for="search-area" class="search-label">
+                        <svg class="icon icon-search">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </label>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region INTRO -->
+    <section class="intro">
+        <div class="intro-container">
+        </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region CALL -->
+    <div class="call">
+        <div class="call-container">
+            <div class="call-area">
+                <h2 class="call-title">
+                    Bilgilerinizi Girin, Biz Sizi Arayalım!
+                </h2>
+                <label for="name">İsim Soyisim</label>
+                <input type="text" id="name" class="call-input">
+                <label for="tel-no">Cep Telefonu</label>
+                <input type="tel" id="tel-no" class="call-input">
+                <button class="btn btn-call">Gönder</button>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region INFO-1 -->
+    <section class="info-1">
+        <div class="info-1-container">
+
+            <h2 class="main-headers">NEDEN SOFTNETİ SEÇMELİYİM?</h2>
+            
+            <div class="info-1-boxes">
+                <div class="info-1-box">
+
+                    <svg class="icon icon-speedometer icons-info">
+                        <use xlink:href="#icon-speedometer"></use>
+                    </svg>
+                    <div class="info-box-title">
+                        Fiber İnternet
+                    </div>
+                    <div class="info-box-description">
+                        Gerçek fiber internet ile gerçek internetin keyfini çıkarın.
+                    </div>
+                </div>
+
+                <div class="info-1-box">
+                    <svg class="icon icon-cycle icons-info">
+                        <use xlink:href="#icon-cycle"></use>
+                    </svg>
+                    <div class="info-box-title">
+                        İptal Bedeliniz Bizden
+                    </div>
+                    <div class="info-box-description">Sahip
+                        olduğunuz internet hizmetine ait iptal
+                        bedelini biz karşılıyoruz.
+                    </div>
+                </div>
+
+                <div class="info-1-box">
+                    <svg class="icon icon-hour-glass icons-info">
+                        <use xlink:href="#icon-hour-glass"></use>
+                    </svg>
+                    <div class="info-box-title">
+                        Hızlı Kurulum
+                    </div>
+                    <div class="info-box-description">
+                        2 gün içinde evinizde fiber internetin keyfini çıkarmaya başlayın.
+                    </div>
+                </div>
+
+                <div class="info-1-box">
+                    <svg class="icon icon-try icons-info">
+                        <use xlink:href="#icon-try"></use>
+                    </svg>
+                    <div class="info-box-title">Uygun Fiyat</div>
+                    <div class="info-box-description">
+                        Aynı altyapıda aynı internet hizmetini daha uygun fiyata sunuyoruz.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region TARRIFS -->
+    <section class="tarrifs">
+        <div class="tarrifs-container">
+
+            <h2 class="main-headers">HEMEN BAŞVURUN, BİZ SİZİ ARAYALIM!</h2>
+
+            <div class="tarrifs-boxes">
+
+                <div class="tarrif-box">
+
+                    <div class="tarrif-box-title">SMALL</div>
+                    <div class="tarrif-box-details">
+                        <div class="tarrif-box-speed">
+                            <div class="box-title">Hız</div>
+                            <div>20 Mbps</div>
+                        </div>
+                        <div class="tarrif-box-quota">
+                            <div class="box-title">Kota</div>
+                            <div>Limitsiz</div>
+                        </div>
+                        <div class="tarrif-box-commitment">
+                            <div class="box-title">Taahhüt</div>
+                            <div>12 Ay</div>
+                        </div>
+                    </div>
+                    <div class="tarrif-box-price">
+                        <div class="box-title">Fiyat</div>
+                        <div class="box-price-amount">59.90 TL</div>
+                    </div>
+                    <button class="tarrif-box-btn">İncele</button>
+
+                </div>
+
+                <div class="tarrif-box">
+                    <div class="tarrif-box-title">MEDIUM</div>
+                    <div class="tarrif-box-details">
+                        <div class="tarrif-box-speed">
+                            <div class="box-title">Hız</div>
+                            <div>35 Mbps</div>
+                        </div>
+                        <div class="tarrif-box-quota">
+                            <div class="box-title">Kota</div>
+                            <div>Limitsiz</div>
+                        </div>
+                        <div class="tarrif-box-commitment">
+                            <div class="box-title">Taahhüt</div>
+                            <div>Yok</div>
+                        </div>
+                    </div>
+                    <div class="tarrif-box-price">
+                        <div class="box-title">Fiyat</div>
+                        <div class="box-price-amount">79.90 TL</div>
+                    </div>
+                    <button class="tarrif-box-btn">İncele</button>
+                </div>
+
+                <div class="tarrif-box">
+                    <div class="tarrif-box-title">LARGE</div>
+                    <div class="tarrif-box-details">
+                        <div class="tarrif-box-speed">
+                            <div class="box-title">Hız</div>
+                            <div>100 Mbps</div>
+                        </div>
+                        <div class="tarrif-box-quota">
+                            <div class="box-title">Kota</div>
+                            <div>Limitsiz</div>
+                        </div>
+                        <div class="tarrif-box-commitment">
+                            <div class="box-title">Taahhüt</div>
+                            <div>12 Ay</div>
+                        </div>
+                    </div>
+                    <div class="tarrif-box-price">
+                        <div class="box-title">Fiyat</div>
+                        <div class="box-price-amount">109.90 TL</div>
+                    </div>
+                    <button class="tarrif-box-btn">İncele</button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
+    <!-- INFO-2 -->
+    <section class="info-2">
+    </section>
+    <!-- ASSISTANCE -->
+    <section class="assistance">
+    </section>
+    <!-- SOCIAL ICON -->
+    <section class="social-icons">
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+    </footer>
+    <!-- FOOTER-2 -->
+    <div class="underside">
+    </div>
+
+</body>
+
+</html>
