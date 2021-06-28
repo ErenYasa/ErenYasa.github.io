@@ -1,0 +1,83 @@
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+// SOFTNET-LOGO
+.icon-modem {
+  color: $color-secondary;
+  width: 28px;
+  height: 28px;
+
+  @include mq {
+    width: 32px;
+    height: 32px;
+  }
+
+}
+
+// DESKTO-SEARCH-ICON
+.icon-search {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  @include mq("desktop") {
+    @include link-hover;
+  }
+
+}
+
+// CARDS-ICON
+.icons-cards {
+  width: 80px;
+  height: 80px;
+  border: $border;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: $color-secondary;
+}
+
+// SOCIAL-MEDIA-LOGO
+.social-icon {
+  width: 32px;
+  height: 32px;
+
+  @include mq {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+// 404-PAGE ICON
+.icon-cancel {
+  width: 50px;
+  height: 50px;
+  border: $border;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: $color-secondary;
+
+  @include mq {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+}
+
+// SIGN-IN PAGE CHECKBOX
+.icon-checkmark {
+  display: none;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 2px;
+  color: $color-secondary;
+}

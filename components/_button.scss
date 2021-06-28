@@ -1,0 +1,115 @@
+.btn {
+    background-color: $color-secondary;
+    color: $color-white;
+    transition: background-color .3s;
+
+    &:hover {
+        opacity: .6;
+    }
+}
+
+// MOBILE NAVIGATION-BTN
+.navigation-button {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 40px;
+    background-color: $color-dark-green;
+
+    @include mq {
+        display: none;
+    }
+}
+
+// ACCOUNT-BTN
+.account-button {
+    margin-left: 10px;
+    @extend .navigation-button;
+}
+
+//SEARCH-BTN
+.search-btn {
+    width: 68px;
+    height: 35px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: $color-secondary;
+    padding: 8px;
+
+    @include mq {
+        @include btn-hover;
+    }
+
+}
+
+// DESKTOP SEARCH-BTN
+.search-btn-desktop {
+    background-color: transparent;
+}
+
+//CALL BUTTON
+.btn-call {
+    align-self: center;
+    height: 40px;
+    border-radius: $border-radius;
+
+}
+
+// MOBILE ASSISTANCE-HELP-BUTTON
+.help-btn {
+    height: 45px;
+    justify-content: center;
+    align-self: end;
+    letter-spacing: .6px;
+
+    @include mq {
+        display: none;
+    }
+}
+
+//SOCIAL-MEDIA-ICONS-BUTTON
+.social-btn {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: transparent;
+    color: $color-white;
+
+    @include mq {
+        width: 36px;
+        height: 36px;
+
+        &:nth-of-type(-n+1) {
+            margin-left: 0;
+        }
+
+        @include link-hover;
+    }
+}
+
+// ERROR-PAGE-BTN
+.error-page-btn {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: .6px;
+    border-radius: 0 0 $border-radius $border-radius;
+
+    @include mq {
+        width: 50%;
+        border-radius: $border-radius;
+    }
+}
+
+// SIGN-IN-PAGE-BTN
+.sign-in-btn {
+    align-self: start;
+    text-align: center;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: $border-radius;
+
+    @include mq {
+        @include btn-hover;
+    }
+}

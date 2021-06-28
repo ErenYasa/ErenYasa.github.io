@@ -1,0 +1,123 @@
+.assistance {
+    width: 100%;
+    height: 543px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: $color-light-green;
+
+    @include mq {
+        height: 426px;
+    }
+
+    .assistance-title {
+        text-align: center;
+        font-size: $font-small + 0.25; // 20px
+        font-weight: bold;
+        letter-spacing: .5px;
+
+        @include mq("tablet") {}
+
+
+        @include mq("desktop") {
+            text-align: start;
+            padding-bottom: 40px;
+            padding-left: 8%;
+            font-size: $font-medium;
+        }
+    }
+
+    &-discover {
+        grid-row: 1/2;
+        display: grid;
+        grid-template-rows: 40px 1fr;
+        margin-top: 20px;
+
+        @include mq {
+            grid-column: 3/4;
+            margin-top: 40px;
+        }
+
+        @include mq("desktop") {
+            grid-column: 3/4;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px 1fr;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    }
+
+    &-brace {
+        grid-row: 2/3;
+        width: 85%;
+        justify-self: center;
+        align-self: center;
+        border: none;
+        height: 1px;
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 4px;
+
+
+        @include mq {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 1px;
+            height: 85%;
+            background-color: transparent;
+            border-left: 1px solid rgba(0, 0, 0, .3);
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+
+    &-help {
+        grid-row: 3/4;
+        display: grid;
+        grid-template-rows: 40px 1fr 45px;
+        margin-top: 20px;
+
+        @include mq("tablet") {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            grid-template-rows: 40px 1fr;
+            margin-top: 40px;
+            padding-right: 25px;
+        }
+
+        @include mq("desktop") {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px 1fr;
+            justify-content: start;
+            margin-top: 50px;
+        }
+
+    }
+
+    .assistance-list {
+        padding-left: 8%;
+
+        .assistance-list-item {
+            padding-bottom: 10px;
+            list-style-type: disc;
+            @include a-hover;
+
+            @include mq {
+                padding-bottom: 0;
+                margin-bottom: 20px;
+            }
+
+        }
+
+        .list-item-dekstop {
+            display: none;
+
+            @include mq {
+                display: list-item;
+            }
+        }
+
+    }
+
+}

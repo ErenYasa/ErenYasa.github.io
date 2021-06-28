@@ -1,0 +1,96 @@
+.intro {
+    width: 100%;
+    height: 200px;
+    background-color: #F89D06;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow-x: hidden;
+
+    &::after {
+
+        @include mq {
+            content: '';
+            position: absolute;
+            left: 0;
+            z-index: -2;
+            width: 100%;
+            height: 505px;
+            background-color: #F89D06;
+        }
+
+    }
+
+    @include mq("tablet") {
+        width: 100%;
+        height: 505px;
+        background: -moz-linear-gradient(0deg, rgba(248, 156, 4, 1) 0%, rgba(249, 175, 54, 0) 10%, rgba(255, 255, 255, 0) 50%, rgba(249, 175, 54, 0) 90%, rgba(248, 156, 4, 1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(248, 156, 4, 1) 0%, rgba(249, 175, 54, 0) 10%, rgba(255, 255, 255, 0) 50%, rgba(249, 175, 54, 0) 90%, rgba(248, 156, 4, 1) 100%);
+        background: -o-linear-gradient(0deg, rgba(248, 156, 4, 1) 0%, rgba(249, 175, 54, 0) 10%, rgba(255, 255, 255, 0) 50%, rgba(249, 175, 54, 0) 90%, rgba(248, 156, 4, 1) 100%);
+        background: -ms-linear-gradient(0deg, rgba(248, 156, 4, 1) 0%, rgba(249, 175, 54, 0) 10%, rgba(255, 255, 255, 0) 50%, rgba(249, 175, 54, 0) 90%, rgba(248, 156, 4, 1) 100%);
+        background: linear-gradient(90deg, rgba(248, 156, 4, 1) 0%, rgba(249, 175, 54, 0) 10%, rgba(255, 255, 255, 0) 50%, rgba(249, 175, 54, 0) 90%, rgba(248, 156, 4, 1) 100%);
+    }
+
+    @include mq("large") {
+        height: 505px;
+
+
+    }
+
+    .intro-container {
+        background-image: url(../img/intro_mobile-2.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include mq("tablet") {
+            height: 505px;
+            background-image: url(../img/intro-2_tablet.jpg);
+            background-position: center;
+            z-index: -1;
+        }
+
+
+        @include mq("desktop") {
+            width: 100%;
+            height: 505px;
+            background-image: url(../img/intro-2.jpg);
+            background-position: center;
+            z-index: -1;
+            
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -2;
+                width: 100%;
+                max-width: 1700px;
+                min-width: 1700px;
+                height: 505px;
+                
+                background: -moz-linear-gradient(0deg, rgba(248, 156, 4, 1) 0%, rgba(250, 195, 104, 1) 21%, rgba(251, 209, 139, 0) 27%, rgba(255, 255, 255, 0) 50%, rgba(251, 209, 139, 0) 73%, rgba(250, 195, 104, 1) 79%, rgba(248, 156, 4, 1) 100%);
+                background: -webkit-linear-gradient(0deg, rgba(248, 156, 4, 1) 0%, rgba(250, 195, 104, 1) 21%, rgba(251, 209, 139, 0) 27%, rgba(255, 255, 255, 0) 50%, rgba(251, 209, 139, 0) 73%, rgba(250, 195, 104, 1) 79%, rgba(248, 156, 4, 1) 100%);
+                background: -o-linear-gradient(0deg, rgba(248, 156, 4, 1) 0%, rgba(250, 195, 104, 1) 21%, rgba(251, 209, 139, 0) 27%, rgba(255, 255, 255, 0) 50%, rgba(251, 209, 139, 0) 73%, rgba(250, 195, 104, 1) 79%, rgba(248, 156, 4, 1) 100%);
+                background: -ms-linear-gradient(0deg, rgba(248, 156, 4, 1) 0%, rgba(250, 195, 104, 1) 21%, rgba(251, 209, 139, 0) 27%, rgba(255, 255, 255, 0) 50%, rgba(251, 209, 139, 0) 73%, rgba(250, 195, 104, 1) 79%, rgba(248, 156, 4, 1) 100%);
+                background: linear-gradient(90deg, rgba(248, 156, 4, 1) 0%, rgba(250, 195, 104, 1) 21%, rgba(251, 209, 139, 0) 27%, rgba(255, 255, 255, 0) 50%, rgba(251, 209, 139, 0) 73%, rgba(250, 195, 104, 1) 79%, rgba(248, 156, 4, 1) 100%);
+            }
+
+        }
+
+        &::before {
+
+            @include mq {
+                height: 505px;
+            }
+
+        }
+
+    }
+
+}

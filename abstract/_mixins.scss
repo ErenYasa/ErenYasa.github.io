@@ -1,0 +1,48 @@
+// LINK-HOVER -- SOCIAL-ICON-HOVER
+@mixin link-hover {
+    transition: .3s;
+
+    &:hover {
+        color: $color-secondary;
+    }
+
+}
+
+// BUTON-HOVER
+@mixin btn-hover {
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #f8b241;
+    }
+
+}
+
+// LINK-FOCUS-BLACK
+@mixin hover-black {
+    
+    &:focus {
+        color: $color-black;
+    }
+
+}
+
+// NAVIGATION-HOVER
+@mixin nav-hover {
+    transition: .3s;
+
+    &:hover {
+        background-color: $color-secondary;
+    }
+
+}
+
+// A TAG-HOVER
+@mixin a-hover {
+    transition: .3s;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
+}

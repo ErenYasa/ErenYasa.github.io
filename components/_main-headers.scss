@@ -1,0 +1,8 @@
+.main-headers {
+    text-align: center;
+    align-self: end;
+
+    @include mq("desktop") {
+        font-size: $font-xlarge;
+    }
+}

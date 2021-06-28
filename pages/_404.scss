@@ -1,0 +1,194 @@
+// #region GRID
+.error-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 52px 1fr 425px 100px;
+
+    @include mq {
+        grid-template-rows: 52px 36px 106% 415px 60px;
+    }
+
+    @include mq("large") {
+        grid-template-rows: 52px 36px 65% 415px 60px;
+    }
+
+    // #region HEADER CONTAINER
+    .header-container {
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-rows: 52px;
+        column-gap: 10%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: $color-dark-green;
+
+
+        @include mq("tablet") {
+            max-width: 1200px;
+            grid-template-columns: 119.75px 119.75px 4fr 119.75px 119.75px;
+            column-gap: 0;
+
+        }
+
+        @include mq("desktop") {
+            max-width: 1200px;
+            grid-template-columns: 140.42px 140.42px 5fr 140.42px 140.42px;
+            column-gap: 0;
+        }
+
+    }
+    // #endregion
+
+    // #region NAVIGATION-CONTAINER
+    .navigation-container {
+
+        @include mq("tablet") {
+            grid-row: 2/3;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 65px 1fr 1fr 65px;
+            grid-template-rows: 36px;
+            column-gap: 0;
+            background-color: $color-light-green;
+        }
+
+        @include mq("desktop") {
+            width: 100%;
+            display: grid;
+            max-width: 1200px;
+            grid-template-columns: 65px 1fr 1fr 65px;
+            grid-template-rows: 36px;
+            column-gap: 0;
+            background-color: $color-light-green;
+        }
+
+    }
+    // #endregion
+
+    // #region FOOTER-CONTAINER
+    .footer-container {
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 305px 80px;
+        width: 100%;
+
+        @include mq {
+            grid-template-rows: 70px 305px;
+        }
+
+        @include mq("desktop") {
+            grid-template-rows: 80px 306px;
+            max-width: 1200px;
+        }
+
+    }
+    // #endregion
+
+    // #region FOOTER-BOTTOM-CONTAINER
+    .footer-bottom-container {
+        grid-row: 5/6;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 30px;
+        width: 100%;
+        justify-items: center;
+
+        @include mq {
+            max-width: 1200px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 60px;
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+
+        @include mq("desktop") {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @include mq("large") {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+    // #endregion
+
+}
+// #endregion
+
+.error-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    &-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 1fr;
+        margin-top: 40px;
+        border: $border;
+        border-radius: $border-radius;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+
+        @include mq {
+            grid-row: 3/4;
+            grid-template-columns: 90px 1fr;
+            grid-template-rows: 1fr;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .page-inside-first {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 5px;
+            font-size: $font-big;
+            font-weight: bold;
+
+            @include mq {
+                align-items: center;
+            }
+
+        }
+
+        .page-inside-second {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            @include mq {
+                align-items: center;
+            }
+
+            .inside-second-title {
+                font-size: $font-medium - 0.25;
+                padding-bottom: 15px;
+
+            }
+
+            .inside-second-text {
+                padding: 0px 15px 20px 15px;
+
+            }
+            
+        }
+
+        .error-page-btn-a {
+            display: block;
+            color: #fff;
+            width: 100%;
+        }
+
+    }
+
+}

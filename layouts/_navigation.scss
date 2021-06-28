@@ -1,0 +1,250 @@
+.navigation {
+    place-self: center;
+    margin-right: 20px;
+    height: 0;
+    overflow: hidden;
+    user-select: $user-select;
+    z-index: 4;
+
+    @include mq {
+        width: 100%;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 52px;
+        margin-right: 0;
+        background-color: $color-light-green;
+        border-bottom: $border;
+    }
+
+    &-menu {
+        width: 100%;
+        position: fixed;
+        top: 51px;
+        right: 0;
+        z-index: 1;
+        transform: translateY(-114%);
+        transition: .3s transform;
+        background-color: $color-dark-green;
+        border-top: 1.5px solid rgba(0, 0, 0, 0.4);
+
+        @include mq {
+            grid-column: 2/4;
+            display: flex;
+            justify-content: center;
+            position: static;
+            transform: none;
+            z-index: 0;
+            border: none;
+            background-color: transparent;
+        }
+
+
+        .menu-btn-list {
+            display: flex;
+            width: 298px;
+            justify-content: space-evenly;
+            margin: 15px auto 20px auto;
+            overflow: hidden;
+            border: $border;
+            border-radius: $border-radius;
+
+            @include mq {
+                display: none;
+            }
+
+            .menu-btn {
+                padding: 8px 10px 8px 10px;
+
+                &:first-child {
+                    background-color: $color-secondary;
+                    z-index: -1;
+                }
+
+            }
+
+        }
+
+        .menu-link-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            @include mq {
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .menu-link {
+
+                &:focus {
+                    @include link-hover;
+
+                    @include mq {
+                        @include hover-black;
+                    }
+
+                }
+
+                @include mq {
+                    padding: 30px;
+                    font-size: $font-xsmall - 0.13rem;
+
+                    &:hover {
+                        @include nav-hover;
+                    }
+
+                }
+
+                @include mq("desktop") {
+                    font-size: $font-small;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 18px;
+
+                    @include mq {
+                        margin-bottom: 0;
+                        padding: 30px;
+                    }
+
+                }
+
+            }
+
+        }
+
+        // #region HR
+        .horizontal {
+            width: 180px;
+            height: 1px;
+            border: none;
+            border-radius: $border-radius;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 0 auto 20px auto;
+
+            @include mq {
+                display: none;
+            }
+            
+        }
+
+        // #endregion
+
+        // #region SEARCH-AREA
+        .search {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 18px;
+            overflow: hidden;
+
+            @include mq("tablet") {
+                width: 100%;
+                position: fixed;
+                transform: translateY(-100%);
+                align-items: center;
+                display: none;
+                height: 50px;
+                top: 88px;
+                z-index: -5;
+                transition: .3s display;
+                margin-bottom: 0;
+
+            }
+
+            @include mq("desktop") {
+                max-width: 1200px;
+                position: fixed;
+                transform: translateY(-100%);
+                align-items: center;
+                display: none;
+                height: 50px;
+                top: 88px;
+                z-index: -1;
+                transition: .3s display;
+                margin-bottom: 0;
+            }
+
+            &-grid {
+                display: flex;
+
+                @include mq {
+                    height: 100%;
+                    grid-column: 2/3;
+                    align-items: center;
+                    justify-self: flex-end;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    margin-right: 10px;
+                    background-color: #57da64;
+                }
+
+            }
+
+            &-box {
+                width: 230px;
+                height: 35px;
+                border: none;
+                border-radius: 10px 0 0 10px;
+                -webkit-border-radius: 10px 0 0 10px;
+                padding: 10px;
+            }
+
+        }
+
+        // #endregion
+
+        // #region SEARCH-AREA CHECKBOX
+        .search-check {
+            display: none;
+
+            @include mq {
+                &:checked+.search {
+                    display: grid;
+                    grid-template-columns: 1fr 340px;
+                    transform: translateY(0);
+
+                    @include mq("desktop") {
+                        display: grid;
+                        grid-template-columns: 1fr 340px;
+                    }
+
+                }
+
+            }
+
+        }
+        // #endregion
+
+    }
+
+    // NAVIGATION CHECKBOX
+    .nav-check {
+        display: none;
+
+        &:checked+.navigation-menu {
+            transform: translateX(0);
+        }
+
+    }
+
+    // #region DESKTOP SEARCH
+    .search-desktop {
+        display: none;
+
+        @include mq {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 15px;
+
+        }
+
+    }
+
+    // #endregion
+
+}
