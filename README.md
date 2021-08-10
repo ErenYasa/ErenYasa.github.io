@@ -1,4 +1,4 @@
-# ErenYasa.github.io
+# Softnet Page
 
 - This is a project with the theme of a telecom operator company. That's why I used softnet as a name
 
